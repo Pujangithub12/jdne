@@ -5,7 +5,7 @@ import team from "../assets/team.jpeg";
 import Kishor from "../assets/founders/kishor.jpg";
 import Kuber from "../assets/founders/kubermani.jpg";
 import Damayanti from "../assets/team/damayanti.jpg";
-import Arjun from "../assets/team/arjun.jpg";
+import Arjun from "../assets/team/Arjun.jpg";
 import Prayash from "../assets/team/prayash.jpeg";
 import Kusum from "../assets/team/kusum.png";
 import Pushpa from "../assets/team/pushpa.jpeg";
@@ -14,7 +14,7 @@ import Mukesh from "../assets/team/mukesh.jpeg";
 import Prabin from "../assets/team/prabin.jpg";
 import Promod from "../assets/team/Promod.jpg";
 import Suresh from "../assets/team/suresh.jpg";
-import Bisham from "../assets/team/bisham.jpg";
+import Bisham from "../assets/team/Bisham.jpg";
 import Abishek from "../assets/team/Abishek.jpg";
 
 
