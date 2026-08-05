@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sun, Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../assets/jdne-logo.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -12,9 +13,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2 cursor-pointer">
-              <div className="bg-green-600 p-1.5 rounded-lg">
-                <Sun className="text-white w-6 h-6" />
-              </div>
+              <img src={logo} alt="Janda Devi Nepal Energy Logo" className="h-10 w-auto" />
               <span className="text-2xl font-bold text-white tracking-tight">
                 Janda Devi <br /> Nepal Energy
               </span>
@@ -62,7 +61,6 @@ const Footer: React.FC = () => {
                 { name: "Project", path: "/gallery" },
                 { name: "Biomass", path: "/biomass" },
                 { name: "Solar", path: "/solar" },
-                { name: "Shop", path: "/shop" },
                 { name: "About", path: "/about" },
                 { name: "Contact", path: "/contact" },
               ].map((item) => (
@@ -75,11 +73,6 @@ const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <a href="#" className="hover:text-green-500 transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
             </ul>
           </div>
 
@@ -97,7 +90,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex gap-3">
                 <Mail className="text-green-500 shrink-0" size={20} />
-                <span>info@jandaenergy.com</span>
+                <span>jdnepalenergy@gmail.com</span>
               </li>
             </ul>
           </div>

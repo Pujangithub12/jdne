@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Sun, Flame, Zap, ArrowRight } from "lucide-react";
+import { Sun, Flame, Zap } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 
 const services = [
@@ -57,19 +57,9 @@ const ServiceSection: React.FC = () => {
               <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 {service.description}
               </p>
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider text-gray-900 group-hover:text-green-600 transition-colors"
-              >
-                Learn More
-                <ArrowRight
-                  size={16}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </a>
             </motion.div>
           ))}
         </div>

@@ -138,7 +138,7 @@ const Contact: React.FC = () => {
                 <h4 className="font-bold text-gray-900 mb-1 text-lg">
                   Email Us
                 </h4>
-                <p className="text-gray-600 text-base">info@jandaenergy.com</p>
+                <p className="text-gray-600 text-base">jdnepalenergy@gmail.com</p>
                 {/* <p className="text-gray-600 text-base">sales@jandaenergy.com</p> */}
               </div>
             </div>

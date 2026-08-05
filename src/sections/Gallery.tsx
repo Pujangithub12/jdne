@@ -2,49 +2,49 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/b5.jpeg";
+import dabur from "../assets/Project-Images/Dabur/d4.jpg";
+import galaxyGarden from "../assets/Project-Images/Galaxy garden/galaxy garden.jpg";
+import hotelHolidayInn from "../assets/Project-Images/Hotel Holiday Inn/hotel2.jpg";
+import jhapaSolar from "../assets/Project-Images/Jhapa solar/jhapa.png";
+import vishnuSadan from "../assets/Project-Images/Vishnu Sadan Solar PV/VISNU SADAN.png";
 
 const galleryItems = [
   {
     id: 1,
-    name: "Industrial Solar Array",
-    location: "Butwal, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800",
+    name: "Britannia Nepal Solar PV Project",
+    location: "Jeetpur Simara, Nepal",
+    image: britanniaRooftop,
   },
   {
     id: 2,
-    name: "Commercial Rooftop Solar",
-    location: "Kathmandu, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1508514177221-18d1427d5ea2?auto=format&fit=crop&q=80&w=800",
+    name: "736 kWp Rooftop – Dabur Nepal",
+    location: "Bara, Nepal",
+    image: dabur,
   },
   {
     id: 3,
-    name: "Residential Solar System",
-    location: "Lalitpur, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1548337138-e87d889cc369?auto=format&fit=crop&q=80&w=800",
+    name: "Galaxy Garden Resort Solar",
+    location: "Bharatpur, Nepal",
+    image: galaxyGarden,
   },
   {
     id: 4,
-    name: "Solar Farm Project",
-    location: "Biratnagar, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1466611653911-954ff21caafc?auto=format&fit=crop&q=80&w=800",
+    name: "Hotel Holiday Inn Express Rooftop",
+    location: "Naxal, Kathmandu",
+    image: hotelHolidayInn,
   },
   {
     id: 5,
-    name: "Smart Solar Grid",
-    location: "Pokhara, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&q=80&w=800",
+    name: "Jhapa Solar PV Project",
+    location: "Shivasatakshi, Jhapa",
+    image: jhapaSolar,
   },
   {
     id: 6,
-    name: "Hybrid Solar Power",
-    location: "Chitwan, Nepal",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=800",
+    name: "Vishnu Sadan Solar PV Project",
+    location: "Pinglasthan, Kathmandu",
+    image: vishnuSadan,
   },
 ];
 

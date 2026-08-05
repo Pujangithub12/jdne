@@ -2,6 +2,7 @@ import React from "react";
 import { Leaf, Flame, Shield, TrendingDown, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
+import pelletsImage from "../assets/pellets.jpg";
 
 const BiomassSection: React.FC = () => {
   const highlights = [
@@ -78,9 +79,9 @@ const BiomassSection: React.FC = () => {
             <div className="relative z-10">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800&h=1000&fit=crop"
+                  src={pelletsImage}
                   alt="Biomass Pellets"
-                  className="w-full h-auto"
+                  className="w-full h-100 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 

@@ -1,27 +1,50 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { ArrowRight } from 'lucide-react';
+import heroImage1 from '../assets/IMG-20260603-WA0006.jpg';
+import heroImage2 from '../assets/IMG-20260603-WA0007.jpg';
+import heroImage3 from '../assets/IMG-20260603-WA0018.jpg';
+import heroImage4 from '../assets/Project-Images/Hotel Holiday Inn/h4.jpeg';
+
+const heroImages = [heroImage1, heroImage2, heroImage3, heroImage4];
 
 const Hero: React.FC = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev + 1) % heroImages.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section
       id="home"
       className="relative h-screen min-h-[700px] flex items-center overflow-hidden pt-16"
     >
-      {/* Background Image with Overlay */}
-      <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=2070")',
-        }}
-      >
+      {/* Background Image Slideshow with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <AnimatePresence mode="sync">
+          <motion.div
+            key={activeSlide}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url("${heroImages[activeSlide]}")`,
+            }}
+          />
+        </AnimatePresence>
         <div className="absolute inset-0 bg-black/50 lg:bg-black/40" />
+        <div className="absolute inset-0 bg-green-900/25" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl ml-0 md:ml-16 lg:ml-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

@@ -1,7 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import usolarLogo from "../assets/policy banner/usolar.jpeg";
-import nepalgov from "../assets/policy banner/nepal-gov.png";
+import neaLogo from "../assets/partners/nea.png";
+import aepcLogo from "../assets/partners/aepc.jpg";
+import brittaniaLogo from "../assets/partners/brittania.png";
+import daburLogo from "../assets/partners/dabur.jpg";
+import ippanLogo from "../assets/partners/ippan_logo.png";
+import ambeLogo from "../assets/partners/ambe.jpeg";
+import litmusCableLogo from "../assets/partners/litmus cable.jfif";
 
 const logos = [
   {
@@ -9,32 +15,32 @@ const logos = [
     src: usolarLogo,
   },
   {
-    name: "Certificate",
-    src: nepalgov,
-  },
-  {
-    name: "AEPC Certified",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
-  },
-  {
     name: "NEA",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
+    src: neaLogo,
   },
   {
-    name: "MoE",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
+    name: "AEPC",
+    src: aepcLogo,
   },
   {
-    name: "World Bank",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
+    name: "Britannia",
+    src: brittaniaLogo,
   },
   {
-    name: "UNDP",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
+    name: "Dabur",
+    src: daburLogo,
   },
   {
-    name: "GIZ",
-    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Generic_logo.svg/120px-Generic_logo.svg.png",
+    name: "IPPAN",
+    src: ippanLogo,
+  },
+  {
+    name: "Jay Ambe",
+    src: ambeLogo,
+  },
+  {
+    name: "Litmus Cable",
+    src: litmusCableLogo,
   },
 ];
 

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Sun, Battery, Zap, CheckCircle2 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/b2.jpeg";
 
 const SolarSection: React.FC = () => {
   return (
@@ -20,9 +21,9 @@ const SolarSection: React.FC = () => {
             className="relative"
           >
             <img
-              src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=1000"
+              src={britanniaRooftop}
               alt="Solar Panel Installation"
-              className="rounded-3xl shadow-2xl"
+              className="rounded-3xl shadow-2xl w-full h-100 object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-yellow-100 hidden md:block">
               <div className="flex items-center gap-4">
