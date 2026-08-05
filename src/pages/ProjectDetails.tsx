@@ -75,7 +75,9 @@ const ProjectDetails: React.FC = () => {
   const Icon = config.icon;
 
   // Safe array handling for rendering
-  const allImages = [project.mainImage, ...project.galleryImages];
+  const allImages = [project.mainImage, ...project.galleryImages].filter(
+    (img): img is string => Boolean(img),
+  );
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
