@@ -1,6 +1,10 @@
 import React from "react";
-import { Sun, Flame, Zap, Check } from "lucide-react";
+import { Sun, Flame, Zap, Lightbulb, Check } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/b5.jpeg";
+import service2Image from "../assets/IMG-20260603-WA0007.jpg";
+import transmissionImage from "../assets/transmission-line.webp";
+import consultingImage from "../assets/consulting.png";
 
 const services = [
   {
@@ -8,8 +12,7 @@ const services = [
     title: "Solar Rooftop & Ground Mount",
     description:
       "End-to-end EPC services covering site assessment, system design, permitting, installation, and commissioning. We manage residential and commercial projects with dedicated project oversight and quality assurance at every stage.",
-    image:
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&h=600&fit=crop",
+    image: britanniaRooftop,
     iconBg: "bg-yellow-500",
     accentText: "text-yellow-700",
     accentBg: "bg-yellow-50",
@@ -25,8 +28,7 @@ const services = [
     title: "Biomass Solutions",
     description:
       "Comprehensive fuel-switching consultancy including industrial stove installation, high-efficiency burner supply, and hands-on technical training for plant operators to ensure a smooth, safe transition to biomass energy.",
-    image:
-      "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=800&h=600&fit=crop",
+    image: service2Image,
     iconBg: "bg-orange-500",
     accentText: "text-orange-700",
     accentBg: "bg-orange-50",
@@ -39,16 +41,31 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Hydropower & Transmission",
+    title: "Transmission",
     description:
-      "Supply of high-quality equipment for micro-hydro plants, routine maintenance contracts, and modern grid integration solutions to maximize energy output and ensure long-term system reliability.",
-    image:
-      "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop",
+      "Design, construction, and maintenance of transmission lines and substation infrastructure, delivering reliable grid integration and power evacuation solutions that ensure long-term system reliability.",
+    image: transmissionImage,
     iconBg: "bg-blue-500",
     accentText: "text-blue-700",
     accentBg: "bg-blue-50",
     borderColor: "border-blue-300",
     features: ["Equipment Supply", "Routine Maintenance", "Grid Integration"],
+  },
+  {
+    icon: Lightbulb,
+    title: "Hydro and Solar Consulting",
+    description:
+      "Expert advisory services spanning feasibility studies, technical due diligence, and project design for hydropower and solar developments, helping clients make informed decisions from concept through commissioning.",
+    image: consultingImage,
+    iconBg: "bg-purple-500",
+    accentText: "text-purple-700",
+    accentBg: "bg-purple-50",
+    borderColor: "border-purple-300",
+    features: [
+      "Feasibility Studies",
+      "Technical Due Diligence",
+      "Project Design & Advisory",
+    ],
   },
 ];
 

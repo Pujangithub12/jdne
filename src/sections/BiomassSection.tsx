@@ -77,7 +77,7 @@ const BiomassSection: React.FC = () => {
           {/* Right: Visual Element */}
           <div className="w-full lg:w-1/2 relative">
             <div className="relative z-10">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={pelletsImage}
                   alt="Biomass Pellets"

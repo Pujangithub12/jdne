@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Sun,
   Leaf,
-  Droplets,
   MapPin,
   Zap,
   Calendar,
@@ -34,8 +33,8 @@ const categoryConfig = {
     badge: "bg-green-100 text-green-700",
   },
   hydropower: {
-    label: "Hydropower",
-    icon: Droplets,
+    label: "Transmission",
+    icon: Zap,
     color: "text-blue-500",
     bg: "bg-blue-50",
     border: "border-blue-200",
@@ -55,7 +54,7 @@ const Projects: React.FC = () => {
     { key: "all", label: "All Projects" },
     { key: "solar", label: "Solar" },
     { key: "biomass", label: "Biomass" },
-    { key: "hydropower", label: "Hydropower" },
+    { key: "hydropower", label: "Transmission" },
   ];
 
   return (

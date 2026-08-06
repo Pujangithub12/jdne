@@ -2,23 +2,53 @@ import React from "react";
 import {
   Sun,
   Battery,
+  BatteryCharging,
   CheckCircle2,
   FileText,
   MapPin,
   Wrench,
   BarChart3,
   Zap,
+  PlugZap,
   Lightbulb,
   RefreshCw,
   ClipboardCheck,
 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import onGridImage from "../assets/solar/ongrid.jpg";
+import offGridImage from "../assets/solar/Off-Grid-System.png";
+import hybridImage from "../assets/solar/hybrid.webp";
+import heroImage from "../assets/solar/solar-rupandehi.jpg";
 
 const checklist = [
   "Smart monitoring app integration",
   "Structure design with wind-load certification",
   "Anti-soiling coating for low maintenance",
   "AEPC-certified equipment supply",
+];
+
+const systemTypes = [
+  {
+    icon: PlugZap,
+    title: "On-Grid Systems",
+    description:
+      "Grid-tied solar systems connected directly to the national grid with net-metering, letting you offset consumption and export surplus power without the cost of battery storage.",
+    image: onGridImage,
+  },
+  {
+    icon: Battery,
+    title: "Off-Grid Systems",
+    description:
+      "Fully independent systems paired with battery storage, engineered for remote sites with no grid access, delivering reliable power around the clock.",
+    image: offGridImage,
+  },
+  {
+    icon: BatteryCharging,
+    title: "Hybrid Systems",
+    description:
+      "A combination of grid connection and battery backup, keeping your power on during outages while still benefiting from net-metering when the grid is available.",
+    image: hybridImage,
+  },
 ];
 
 const endToEndServices = [
@@ -38,7 +68,7 @@ const Solar: React.FC = () => {
       {/* Banner */}
       <div className="relative h-[400px] md:h-[500px] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&h=800&fit=crop"
+          src={heroImage}
           alt="Solar Energy"
           className="w-full h-full object-cover"
         />
@@ -124,6 +154,42 @@ const Solar: React.FC = () => {
         </div>
       </div>
 
+      {/* Types of Solar Systems */}
+      <div className="pb-24">
+        <div className="container mx-auto px-4 md:px-6">
+          <SectionHeader
+            title="Types of Solar Installations"
+            subtitle="We design and install on-grid, off-grid, and hybrid solar systems tailored to your energy needs and site conditions."
+          />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            {systemTypes.map((type, index) => (
+              <div
+                key={index}
+                className="rounded-3xl border border-yellow-100 bg-yellow-50/40 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <img
+                  src={type.image}
+                  alt={type.title}
+                  className="w-full h-56 object-cover"
+                />
+                <div className="p-8">
+                  <div className="w-14 h-14 bg-yellow-500 text-white rounded-2xl flex items-center justify-center mb-6 shadow-lg -mt-16 relative z-10 border-4 border-white">
+                    <type.icon size={28} />
+                  </div>
+                  <h4 className="font-bold text-gray-900 text-xl mb-3">
+                    {type.title}
+                  </h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    {type.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       {/* End-to-End Services */}
       <div className="pb-24 bg-gray-50">
         <div className="container mx-auto px-4 md:px-6 py-24">
@@ -132,16 +198,19 @@ const Solar: React.FC = () => {
             subtitle="JDNE delivers comprehensive services in rooftop solar and ground-mounted systems, encompassing installation, maintenance, training, and sustainable energy solutions."
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {endToEndServices.map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-gray-100"
+                className="group relative flex items-center gap-5 bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl hover:border-yellow-200 hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
-                  <service.icon className="text-yellow-600" size={24} />
+                <span className="absolute top-3 right-4 text-4xl font-black text-gray-50 group-hover:text-yellow-50 transition-colors select-none">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className="relative z-10 w-14 h-14 shrink-0 bg-yellow-500 group-hover:bg-yellow-600 rounded-2xl flex items-center justify-center shadow-lg shadow-yellow-500/20 transition-colors duration-300">
+                  <service.icon className="text-white" size={26} />
                 </div>
-                <h4 className="font-bold text-gray-900 text-sm leading-snug">
+                <h4 className="relative z-10 font-bold text-gray-900 text-base leading-snug">
                   {service.title}
                 </h4>
               </div>

@@ -4,11 +4,11 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import logo from "../assets/jdne-logo.png";
 
 const subsidiaries = [
-  { name: "Gridtie", url: "https://gridtiesolar.com.np/" },
-  { name: "Troika", url: "https://troikaenergy.com.np/" },
+  { name: "Gridtie Solar Pvt Ltd", url: "https://gridtiesolar.com.np/" },
+  { name: "Troika Energy Pvt Ltd", url: "https://troikaenergy.com.np/" },
   { name: "Usolar Janda Energy", url: "https://www.usolarje.com.np/" },
-  { name: "Bhojpur Shiwalawa", url: null },
-  { name: "Green Leaves", url: "https://greenleavesconsulting.com.np/" },
+  { name: "Bhojpur Shivalaya Power Pvt Ltd", url: null },
+  { name: "Green Leaves Consulting Services", url: "https://greenleavesconsulting.com.np/" },
 ];
 
 const Header: React.FC = () => {
@@ -34,11 +34,11 @@ const Header: React.FC = () => {
 
   const navLinks = [
     { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
     { name: "Services", to: "/services" },
     { name: "Projects", to: "/projects" },
     { name: "Biomass", to: "/biomass" },
     { name: "Solar", to: "/solar" },
-    { name: "About", to: "/about" },
   ];
 
   return (

@@ -9,6 +9,10 @@ import {
   Globe,
 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import pelletsImage from "../assets/pellets.jpg";
+import pelletVideo1 from "../assets/biomass/pellet-video1.mp4";
+import pelletVideo2 from "../assets/biomass/pellet-video2.mp4";
+import pelletVideo3 from "../assets/biomass/pellet-video3.mp4";
 
 const Biomass: React.FC = () => {
   const reasons = [
@@ -70,7 +74,7 @@ const Biomass: React.FC = () => {
       {/* Hero Banner */}
       <div className="relative h-[400px] lg:h-[500px] overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?w=1600&h=900&fit=crop"
+          src={pelletsImage}
           alt="Biomass energy"
           className="w-full h-full object-cover"
         />
@@ -111,6 +115,32 @@ const Biomass: React.FC = () => {
                 <p className="text-gray-600 leading-relaxed text-base">
                   {item.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Pellet Production Videos */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Biomass Pellets in Action"
+            subtitle="A closer look at pellet production and use across our facilities"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            {[pelletVideo1, pelletVideo2, pelletVideo3].map((video, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden shadow-lg border border-orange-100 bg-black"
+              >
+                <video
+                  src={video}
+                  controls
+                  playsInline
+                  className="w-full aspect-video object-cover"
+                />
               </div>
             ))}
           </div>

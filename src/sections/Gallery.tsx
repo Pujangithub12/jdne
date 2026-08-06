@@ -68,7 +68,7 @@ const Gallery: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-2xl shadow-lg bg-white"
+              className="group relative overflow-hidden rounded-lg shadow-lg bg-white"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -90,7 +90,7 @@ const Gallery: React.FC = () => {
               </div>
 
               {/* Hover effect border */}
-              <div className="absolute inset-0 border-2 border-transparent group-hover:border-green-500/50 rounded-2xl transition-colors duration-300 pointer-events-none" />
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-green-500/50 rounded-lg transition-colors duration-300 pointer-events-none" />
             </motion.div>
           ))}
         </div>

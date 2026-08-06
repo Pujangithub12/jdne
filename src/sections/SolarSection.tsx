@@ -23,7 +23,7 @@ const SolarSection: React.FC = () => {
             <img
               src={britanniaRooftop}
               alt="Solar Panel Installation"
-              className="rounded-3xl shadow-2xl w-full h-100 object-cover"
+              className="rounded-2xl shadow-2xl w-full h-100 object-cover"
             />
             <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-yellow-100 hidden md:block">
               <div className="flex items-center gap-4">

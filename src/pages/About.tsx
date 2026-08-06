@@ -20,10 +20,10 @@ import Abishek from "../assets/team/Abishek.jpg";
 
 
 const stats = [
-  { label: "Projects Completed", value: "50+" },
-  { label: "MW Installed", value: "20+" },
-  { label: "CO2 Reduced (Tons)", value: "120k" },
-  { label: "Happy Clients", value: "40+" },
+  { label: "Utility-Scale Solar Delivered", value: "18.5 MW" },
+  { label: "C&I Rooftop Solar Completed", value: "1.5+ MWp" },
+  { label: "CO₂ Avoided via Biomass Switches", value: "947 t/yr" },
+  { label: "Utility-Scale Solar in Pipeline", value: "48+ MW" },
 ];
 
 const valueProps = [
@@ -122,16 +122,16 @@ const teamMembers = [
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-white overflow-hidden">
+    <section id="about" className="pt-40 pb-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row gap-16 items-center">
+        <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Image Side */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="lg:w-1/2 relative"
+            className="lg:w-1/2 relative mt-10"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
@@ -143,7 +143,7 @@ const About: React.FC = () => {
             </div>
             {/* Floating Card */}
             <div className="absolute -bottom-10 -right-10 hidden md:block bg-green-600 p-8 rounded-2xl text-white shadow-xl max-w-xs">
-              <p className="text-3xl font-bold mb-2">5+</p>
+              <p className="text-3xl font-bold mb-2">8+</p>
               <p className="text-sm font-medium opacity-90">
                 Years of excellence in renewable energy sector.
               </p>
@@ -165,11 +165,26 @@ const About: React.FC = () => {
               Pioneering the Path to{" "}
               <span className="text-green-600">Energy Freedom</span>
             </h2>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              Janda Devi Nepal Energy Pvt. Ltd. (JDNE), established in 2019, is
+              a Kathmandu-based renewable energy company working across solar
+              PV, biomass energy, power transmission, and hydropower
+              consulting. From utility-scale solar farms to industrial biomass
+              conversions, JDNE delivers complete engineering, procurement,
+              and construction (EPC) services together with feasibility
+              studies, regulatory support, and long-term operation and
+              maintenance.
+            </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              At Janda Energy, our mission is to empower communities through
-              accessible, reliable, and sustainable energy solutions. We believe
-              that clean energy is not just a choice, but a responsibility for a
-              better tomorrow.
+              JDNE's track record includes the installation of 18.5 MW of
+              grid-connected solar capacity, construction of 33 kV
+              transmission infrastructure, and pioneering RESCO-model biomass
+              projects that have helped Nepali industries replace diesel,
+              furnace oil, and LPG with clean, locally produced biomass
+              pellets. The company works closely with the Alternative Energy
+              Promotion Centre (AEPC) under the Sustainable Energy Challenge
+              Fund (SECF) to expand renewable energy access for micro, small,
+              and medium enterprises (MSMEs).
             </p>
 
             <div className="space-y-6 mb-10">
