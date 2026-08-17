@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import SectionHeader from "../components/SectionHeader";
+import Seo from "../components/Seo";
 import { projects } from "../data/projects";
 
 type ProjectType = "solar" | "biomass" | "hydropower";
@@ -59,6 +60,11 @@ const Projects: React.FC = () => {
 
   return (
     <section className="py-24 bg-gray-50 min-h-screen">
+      <Seo
+        title="Our Projects"
+        description="Explore solar, biomass, and transmission line projects completed by Janda Devi Nepal Energy (JDNE) for industrial, commercial, and institutional clients across Nepal."
+        path="/projects"
+      />
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         <SectionHeader
           title="Our Projects"

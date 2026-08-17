@@ -15,6 +15,7 @@ import {
   ClipboardCheck,
 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import Seo from "../components/Seo";
 import onGridImage from "../assets/solar/ongrid.jpg";
 import offGridImage from "../assets/solar/Off-Grid-System.png";
 import hybridImage from "../assets/solar/hybrid.webp";
@@ -64,6 +65,12 @@ const endToEndServices = [
 
 const Solar: React.FC = () => {
   return (
+    <>
+      <Seo
+        title="Solar Energy Solutions in Nepal"
+        description="Janda Devi Nepal Energy (JDNE) designs and installs on-grid, off-grid, and hybrid solar PV systems for homes, industries, and institutions across Nepal."
+        path="/solar"
+      />
     <section id="solar" className="bg-white">
       {/* Banner */}
       <div className="relative h-[400px] md:h-[500px] overflow-hidden">
@@ -219,6 +226,7 @@ const Solar: React.FC = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

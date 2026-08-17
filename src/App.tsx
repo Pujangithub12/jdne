@@ -17,10 +17,16 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetails";
 import ServiceSection from "./sections/ServiceSection";
 import SolarSection from "./sections/SolarSection";
+import Seo from "./components/Seo";
 
 // Home Page Component
 const Home = () => (
   <>
+    <Seo
+      title="Janda Devi Nepal Energy (JDNE) | Solar, Biomass & Hydropower in Nepal"
+      description="Janda Devi Nepal Energy (JDNE) is a leading renewable energy company in Nepal delivering solar rooftop, biomass, and hydropower transmission projects for homes, industries, and institutions."
+      path="/"
+    />
     <Hero />
     <ServiceSection />
     <BiomassSection />

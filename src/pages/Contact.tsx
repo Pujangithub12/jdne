@@ -9,6 +9,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import Seo from "../components/Seo";
 
 interface FormErrors {
   name?: string;
@@ -106,6 +107,11 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-24 bg-gray-50">
+      <Seo
+        title="Contact Us"
+        description="Get in touch with Janda Devi Nepal Energy (JDNE) in Kathmandu, Nepal for a free consultation on solar, biomass, or hydropower projects."
+        path="/contact"
+      />
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeader
           title="Get in Touch"

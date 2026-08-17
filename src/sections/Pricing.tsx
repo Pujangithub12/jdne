@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Check, Sun, Zap, Flame } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
+import Seo from '../components/Seo';
 
 const plans = [
   {
@@ -63,8 +64,13 @@ const plans = [
 const Pricing: React.FC = () => {
   return (
     <section className="py-24 bg-white">
+      <Seo
+        title="Pricing & Service Packages"
+        description="Transparent pricing for solar, biomass, and hydropower service packages from Janda Devi Nepal Energy (JDNE), tailored to residential, commercial, and industrial needs."
+        path="/pricing"
+      />
       <div className="container mx-auto px-4 md:px-6">
-        <SectionHeader 
+        <SectionHeader
           title="Service Packages"
           subtitle="Transparent pricing models tailored to different energy needs and scales."
         />

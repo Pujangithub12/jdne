@@ -15,6 +15,7 @@ import {
   Leaf,
   Droplets,
 } from "lucide-react";
+import Seo from "../components/Seo";
 import { projects } from "../data/projects";
 
 const categoryConfig = {
@@ -81,6 +82,11 @@ const ProjectDetails: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 py-12">
+      <Seo
+        title={project.name}
+        description={project.description}
+        path={`/projects/${project.id}`}
+      />
       <div className="container mx-auto px-4 md:px-6 max-w-7xl">
         {/* Back Link */}
         <Link

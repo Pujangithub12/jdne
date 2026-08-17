@@ -9,6 +9,7 @@ import {
   Globe,
 } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import Seo from "../components/Seo";
 import pelletsImage from "../assets/pellets.jpg";
 import pelletVideo1 from "../assets/biomass/pellet-video1.mp4";
 import pelletVideo2 from "../assets/biomass/pellet-video2.mp4";
@@ -71,6 +72,11 @@ const Biomass: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Seo
+        title="Biomass Energy Solutions in Nepal"
+        description="Janda Devi Nepal Energy (JDNE) supplies biomass pellets and industrial biomass boiler systems, helping Nepali industries cut fuel costs and emissions."
+        path="/biomass"
+      />
       {/* Hero Banner */}
       <div className="relative h-[400px] lg:h-[500px] overflow-hidden">
         <img

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { TrendingDown, Leaf, Battery } from "lucide-react";
+import Seo from "../components/Seo";
 import team from "../assets/team.jpeg";
 import Kishor from "../assets/founders/kishor.jpg";
 import Kuber from "../assets/founders/kubermani.jpg";
@@ -123,6 +124,11 @@ const teamMembers = [
 const About: React.FC = () => {
   return (
     <section id="about" className="pt-40 pb-24 bg-white overflow-hidden">
+      <Seo
+        title="About Us"
+        description="Learn about Janda Devi Nepal Energy (JDNE) — our mission, leadership, and track record delivering solar, biomass, and hydropower projects across Nepal."
+        path="/about"
+      />
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Image Side */}

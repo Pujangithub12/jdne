@@ -1,6 +1,7 @@
 import React from "react";
 import { Sun, Flame, Zap, Lightbulb, Check } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
+import Seo from "../components/Seo";
 import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/b5.jpeg";
 import service2Image from "../assets/IMG-20260603-WA0007.jpg";
 import transmissionImage from "../assets/transmission-line.webp";
@@ -72,6 +73,11 @@ const services = [
 const Services: React.FC = () => {
   return (
     <section id="services" className="bg-white">
+      <Seo
+        title="Our Services"
+        description="Janda Devi Nepal Energy (JDNE) offers end-to-end EPC services for solar rooftop, biomass, transmission lines, and energy consulting across Nepal."
+        path="/services"
+      />
       {/* Banner */}
       <div className="relative h-[400px] md:h-[500px] overflow-hidden">
         <img
