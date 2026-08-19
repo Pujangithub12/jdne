@@ -1,13 +1,20 @@
-import solar1 from "../assets/solar-1.jpg";
-import solar2 from "../assets/solar-2.jpg";
-import solar3 from "../assets/solar-3.jpg";
 import solarControlPanel from "../assets/solar-control-panel.jpg";
+import dabur1 from "../assets/Project-Images/Dabur/dabur (1).jpg";
+import dabur2 from "../assets/Project-Images/Dabur/dabur (2).jpg";
+import dabur3 from "../assets/Project-Images/Dabur/dabur (3).jpg";
+import dabur4 from "../assets/Project-Images/Dabur/dabur (4).jpg";
+import transmissionLine1 from "../assets/transmission-line.webp";
+import transmissionLine2 from "../assets/transmission-line-2.jfif";
+import substation from "../assets/substation.jpg";
+import genericSolar from "../assets/generic-solar.png";
+import butwal1 from "../assets/butwal-solar/butwal-1.jpg";
+import butwal3 from "../assets/butwal-solar/butwal-3.jpg";
+import butwal4 from "../assets/butwal-solar/butwal-4.png";
+import butwal5 from "../assets/butwal-solar/butwal-5.jpg";
+import janakiSolar from "../assets/IMG-20260603-WA0018.jpg";
 import burner from "../assets/burner.jpg";
 import site1 from "../assets/IMG-20260603-WA0006.jpg";
 import site2 from "../assets/IMG-20260603-WA0007.jpg";
-import site3 from "../assets/IMG-20260603-WA0013.jpg";
-import site4 from "../assets/IMG-20260603-WA0014.jpg";
-import site5 from "../assets/IMG-20260603-WA0018.jpg";
 import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/Britannia.jpg";
 import b2 from "../assets/Project-Images/Britannia Rooftop/b2.jpeg";
 import b3 from "../assets/Project-Images/Britannia Rooftop/b3.jpeg";
@@ -64,8 +71,8 @@ export const projects: Project[] = [
     warranty: "25 years performance",
     owner: "Dabur Nepal",
     area: "6,500 sq.m",
-    mainImage: solar1,
-    galleryImages: [solar2, solar3, solarControlPanel],
+    mainImage: dabur1,
+    galleryImages: [dabur2, dabur3, dabur4, solarControlPanel],
   },
   {
     id: 2,
@@ -102,8 +109,8 @@ export const projects: Project[] = [
     warranty: "20 years structural",
     owner: "NEA",
     area: "12 km corridor",
-    mainImage: site3,
-    galleryImages: [site4, site5],
+    mainImage: transmissionLine1,
+    galleryImages: [transmissionLine2],
   },
   {
     id: 4,
@@ -141,6 +148,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "N/A",
+    mainImage: genericSolar,
     galleryImages: [],
   },
   {
@@ -159,8 +167,8 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "17.2 hectares",
-
-    galleryImages: [],
+    mainImage: butwal1,
+    galleryImages: [butwal3, butwal4, butwal5],
   },
   {
     id: 7,
@@ -178,6 +186,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "N/A",
+    mainImage: janakiSolar,
     galleryImages: [],
   },
   {
@@ -272,6 +281,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "N/A",
+    mainImage: transmissionLine1,
     galleryImages: [],
   },
   {
@@ -290,6 +300,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "N/A",
+    mainImage: substation,
     galleryImages: [],
   },
   {
@@ -308,6 +319,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "5.6 km corridor",
+    mainImage: transmissionLine1,
     galleryImages: [],
   },
   {
@@ -326,6 +338,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "Jay Ambe",
     area: "N/A",
+    mainImage: transmissionLine1,
     galleryImages: [],
   },
   {
@@ -344,6 +357,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "Kutumba Hotel",
     area: "N/A",
+    mainImage: genericSolar,
     galleryImages: [],
   },
   {
@@ -381,6 +395,7 @@ export const projects: Project[] = [
     warranty: "N/A",
     owner: "N/A",
     area: "1 km corridor",
+    mainImage: transmissionLine1,
     galleryImages: [],
   },
   {
@@ -409,7 +424,7 @@ export const projects: Project[] = [
       "A rooftop industrial solar system of 489 modules having capacity of 615Wp each and two string inverters with total capacity of 250 kW, supplying three-phase power to the facility's distribution system and reducing dependence on grid electricity.",
     type: "solar",
     capacity: "300 kWp",
-    location: "Jeetpur Simara",
+    location: "Parwanipur Rural Municipality, Bara",
     savings: "Reduced dependence on grid electricity",
     panels: "489 × 615Wp Solar Modules",
     inverter: "Two String Inverters (250 kW total capacity)",

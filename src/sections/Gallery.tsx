@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 import britanniaRooftop from "../assets/Project-Images/Britannia Rooftop/b5.jpeg";
-import dabur from "../assets/Project-Images/Dabur/d4.jpg";
+import dabur from "../assets/Project-Images/Dabur/dabur (2).jpg";
 import galaxyGarden from "../assets/Project-Images/Galaxy garden/galaxy garden.jpg";
 import hotelHolidayInn from "../assets/Project-Images/Hotel Holiday Inn/hotel2.jpg";
 import jhapaSolar from "../assets/Project-Images/Jhapa solar/jhapa.png";
