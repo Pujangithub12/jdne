@@ -34,6 +34,7 @@ import vishnuSadan from "../assets/Project-Images/Vishnu Sadan Solar PV/VISNU SA
 import v2 from "../assets/Project-Images/Vishnu Sadan Solar PV/v2.jpg";
 import collegeOfMedicalSciences from "../assets/Project-Images/College of medical sciences/college of medical sciences.jpeg";
 import c2 from "../assets/Project-Images/College of medical sciences/c2.jpeg";
+import transmissionLineJanakiSolar from "../assets/transmission-line-janaki-solar.jfif";
 
 export interface Project {
   id: number;
@@ -435,5 +436,24 @@ export const projects: Project[] = [
     area: "N/A",
     mainImage: britanniaRooftop,
     galleryImages: [b2, b3, b4, b5],
+  },
+  {
+    id: 21,
+    name: "33 kV Transmission Line (Janaki Solar)",
+    description:
+      "Consultation, design, and feasibility study for an 11.6 km, 33 kV single circuit transmission line, evacuating power from Janaki Solar PV to Metropolitan City, Banke using ACSR Dog conductors and XLPE cabling.",
+    type: "hydropower",
+    capacity: "33 kV",
+    location: "Banke",
+    savings: "Reliable power evacuation from Janaki Solar PV",
+    panels: "N/A",
+    inverter: "N/A",
+    date: "Completed",
+    modules: "ACSR Dog Conductor, XLPE Cables",
+    warranty: "N/A",
+    owner: "N/A",
+    area: "11.6 km corridor",
+    mainImage: transmissionLineJanakiSolar,
+    galleryImages: [],
   },
 ];
